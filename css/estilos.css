@@ -1,0 +1,40 @@
+/* Aula inicial :D */
+body{
+  background: teal;
+  background-image: url('http://smartedesigners.com/wp-content/uploads/2018/03/p_web_process_idea2-300x254.jpg');
+  background-size: auto 100hv;
+  font-family: arial;
+  heigth: 100vh;
+}
+
+.menu{
+  background-color: white;
+}
+
+.menu ul{
+  display:flex;
+  justify-content: space-around;
+}
+
+.menu li{
+  list-style:none;
+}
+
+a{
+  color: teal;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.site-subtitle,
+.site-title{
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-subtitle{
+  font-style: italic;
+}
