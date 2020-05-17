@@ -1,14 +1,18 @@
 /* Aula inicial :D */
+@font-face {
+  font-family: space-age;
+  src: url('../font/space age.ttf');
+}
+
 body{
-  background: teal;
-  background-image: url('http://smartedesigners.com/wp-content/uploads/2018/03/p_web_process_idea2-300x254.jpg');
-  background-size: auto 100hv;
+  background-size: auto, 100pc;
   font-family: arial;
-  heigth: 100vh;
 }
 
 .menu{
-  background-color: white;
+  background-color: rgb(95, 102, 107);
+  opacity: 75%;
+  padding: 1px;
 }
 
 .menu ul{
@@ -21,7 +25,7 @@ body{
 }
 
 a{
-  color: teal;
+  color: white;
   text-decoration: none;
 }
 
@@ -29,12 +33,51 @@ a:hover{
   text-decoration: underline;
 }
 
+.site-subtitle2,
 .site-subtitle,
 .site-title{
+  font-family: space-age;
   color: whitesmoke;
   text-align: center;
+  filter: opacity(95%)
+}
+
+.site-title{
+  font-size: 38px ;
+}
+
+.site-subtitle2,
+.site-subtitle{
+  font-style: italic;
 }
 
 .site-subtitle{
-  font-style: italic;
+  font-size: 30px ;
+}
+
+.site-subtitle2{
+  font-family: 'Segoe UI'; /*, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-size: 15px;
+}
+
+.logo{
+  position: absolute;
+  top: 28%;
+  left: 47%;
+  margin: 0;
+  padding: 0; 
+  width: 120px;
+  height: auto;
+  filter: opacity(25%);
+  filter: blur(85%);
+}
+
+.copyright{
+  position: absolute;
+  bottom: 0%;
+  margin: 0;
+  padding: 0; 
+  color: whitesmoke;
+  font-family: 'Segoe UI';
+  font-size: 65%;
 }
