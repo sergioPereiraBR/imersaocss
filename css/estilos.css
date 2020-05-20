@@ -1,4 +1,10 @@
 /* Aula inicial :D */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: space-age;
   src: url('../font/space age.ttf');
@@ -9,10 +15,40 @@ body{
   font-family: arial;
 }
 
+/* breakpoint */
+/* Se a largura for de pelo menos 400 pixel vai carregar estes estilos */
+@media(min-width: 400px){
+  body{
+    font-size: 14px;
+  }
+}
+
+@media(min-width: 600px){
+  body{
+    font-size: 18px;
+  }
+}
+
+@media(min-width: 1200px){
+  body{
+    font-size: 20px;
+  }
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu{
   background-color: rgb(95, 102, 107);
+  position: fixed;
+  width: 100vw;
   opacity: 75%;
   padding: 1px;
+  top:0;
 }
 
 .menu ul{
@@ -22,6 +58,12 @@ body{
 
 .menu li{
   list-style:none;
+}
+
+.menu a{
+  display: block;
+  background-color: red;
+  padding: 10px;
 }
 
 a{
@@ -61,23 +103,22 @@ a:hover{
 }
 
 .logo{
-  position: absolute;
-  top: 28%;
-  left: 47%;
-  margin: 0;
-  padding: 0; 
   width: 120px;
-  height: auto;
   filter: opacity(25%);
   filter: blur(85%);
+  margin-top: 5%;
+  margin-left: 33%;
 }
 
 .copyright{
   position: absolute;
   bottom: 0%;
-  margin: 0;
-  padding: 0; 
   color: whitesmoke;
   font-family: 'Segoe UI';
   font-size: 65%;
+}
+
+.img-portfolio{
+  height: 180px;
+  width: 180px;
 }
